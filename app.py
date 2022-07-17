@@ -15,6 +15,9 @@ def loadModels():
 model, tokenizer = loadModels()
 
 lit.title("성경말투 생성기")
+lit.caption("적당한 길이의 한 문장을 넣었을 때 가장 좋은 결과가 나옵니다.")
+lit.caption("https://github.com/rycont/kobart-biblify")
+
 text_input = lit.text_area("문장 입력")
 
 MAX_LENGTH = 128
