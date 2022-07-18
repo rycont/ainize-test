@@ -55,15 +55,15 @@ if len(text_input.strip()) > 0:
       i + 1,
       tokens,
       attentionMasks
-     )
-     if generated in results:
+    )
+    if generated in results:
        print("중복됨")
        continue
        
-     results.append(generated)
+    results.append(generated)
      
-     with lit.expander(str(len(results)) + "번째 결과 (" + str(i +1) + ")", True):
-       lit.write(generated)
-       print(generated)
+    with lit.expander(str(len(results)) + "번째 결과 (" + str(i +1) + ")", True):
+      lit.write(generated)
+      print(generated)
      
-     lit.caption("및 " + str(5 - len(results)) + " 개의 중복된 결과")
+    lit.caption("및 " + str(5 - len(results)) + " 개의 중복된 결과")
