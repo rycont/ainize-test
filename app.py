@@ -56,7 +56,6 @@ if len(text_input.strip()) > 0:
       tokens,
       attentionMasks
      )
-     
      if generated in results:
        print("중복됨")
        continue
